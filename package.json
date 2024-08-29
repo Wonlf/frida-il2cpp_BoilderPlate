@@ -1,0 +1,21 @@
+{
+  "name": "frida-il2cpp-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "spawn": "frida -U -f com.package -l dist/agent.js",
+    "watch": "frida-compile src/index.ts -o dist/agent.js -w",
+    "build": "frida-compile src/index.ts -o dist/agent.js -c"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/frida-gum": "^18.3.2",
+    "@types/node": "^20.3.1",
+    "frida-compile": "^16.2.2",
+    "frida-il2cpp-bridge": "^0.8.2",
+    "typescript": "^5.1.3"
+  }
+}
